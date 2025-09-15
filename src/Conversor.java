@@ -29,7 +29,7 @@ public class Conversor {
                   double fahrenheit = (celsius * 1.8) + 32;
 
                         String temperatura = String.format("%.2f",fahrenheit);
-                  System.out.println("Está " + fahrenheit + "ºF");
+                  System.out.println(celsius + "ºC equivale a " + fahrenheit + "ºF");
                   break;
           }
 
@@ -38,12 +38,19 @@ public class Conversor {
                   double kelvin = celsius +  273.15;
 
                     String temperatura = String.format("%.2f",kelvin);
-                  System.out.println("Está " + kelvin + "ºK");
+                  System.out.println(celsius + "ºC equivale a " + kelvin + "ºK");
                   break;
           }
-}
 
+        System.out.println("deseja saber outra temperatura 1/2");
+          int desejo = sc.nextInt();
 
-
-
+          switch (desejo){
+              case 1:
+                  obterDados();
+                  break;
+              case 2:
+                  System.out.println("ok...");
+          }
+    }
 }
